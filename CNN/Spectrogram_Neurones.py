@@ -116,46 +116,41 @@ import math as m
 # Load the image with keras 
 # arg : path / target_size same as the test_set
 
-pre = np.zeros([118,2])
+#Creation du matrice pour mettre tous les resultats des tests
 array = []
 
 i = 1
+#Parcours le dossier prediction avec les 118 spectrogrammes de tests
 while i < 119 :
-    test_image = image.load_img('prediction/spectrogram ('+ str(i) +').png', target_size=(64, 64))
-    
+	#charge l image en cours
+    prediction_image = image.load_img('prediction/spectrogram ('+ str(i) +').png', target_size=(64, 64))
     
     # passer l'image en tableau
-    test_image = image.img_to_array(test_image)
+    prediction_image = image.img_to_array(prediction_image)
     
     #test method
     #mauvais format, il faut ajouter une dimension au test 
-    test_image = np.expand_dims(test_image, axis = 0)
-    loaded_model.predict(test_image)
+    prediction_image = np.expand_dims(prediction_image, axis = 0)
+    loaded_model.predict(prediction_image)
     
-    #Correspondance 
-    result  = loaded_model.predict(test_image)
+    #Realise la prediction 
+    result  = loaded_model.predict(prediction_image)
     
-    result = result
-    
-    
-    # 1 est une voix
-    #t = train_generator.class_indices
-    
+    #Si superieur a zero : voix autrement de la musique
     if result[0][0] > 0: 
         prediction='voice'
     else:
         prediction='music'
     
-    print(i)
-    pre[i - 1,0] = i
-    pre[i - 1,1] = float(result)
-    
+    #Remplit la matrice de prediction 
     array.append(prediction)
     
     i = i + 1
     
+#Calcul le nombre de music et de voix predit
 nombre_music = array.count("music")
 nombre_voix = array.count("voice")
 
-erreur = (118 - (m.fabs(nombre_music-50) + m.fabs(nombre_voix-68))) *100 / 118
+#Calcul le pourcentage de reussite
+reussite = (118 - (m.fabs(nombre_music-50) + m.fabs(nombre_voix-68))) *100 / 118
 

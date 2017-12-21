@@ -11,3 +11,5 @@ Dans le dossier ANN, vous trouverez 2 fichiers MATLAB
    
  - features_extraction_predictions.m : 
    extraire les données à prédire - changer le PATH en constante et d'exécuter le code
+   
+Vous trouverez 2 bases au formal `.csv`

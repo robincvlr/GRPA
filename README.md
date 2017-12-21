@@ -11,6 +11,15 @@ Classification de la parole et de la musique par réseau de neurones
 
 **Ajouter une bibliothèque dans Anaconda :** dans le prompt conda, saisissez : `conda install name_package`
 
+## Utiliser le découpeur de fichier audio
+**Dans le dossier Decoupage fichier audio, vous trouverez :**
+  
+ - **ffmpeg.exe**
+   l'executable de la librairie ffmpeg utilisée dans le script bash, à laisser dans le même dossier que le script bash lors de son exécution
+   
+ - **cmd_cut.bat**
+   le script bash permettant la découpe des fichiers audio
+
 ## Utiliser le CNN (approche par spectrogramme)
 **Dans le dossier CNN, vous trouverez trois dossiers contenant des spectrogrammes :**
 
@@ -20,7 +29,7 @@ Classification de la parole et de la musique par réseau de neurones
  - **prediction**
    spectrogrammes du base de tests pour évaluer les performances de l'algorithme
 
-**Vous disposez egalement de trois Python** :
+**Vous disposez également de trois Python** :
  
  - **AudioFiles_to_Spectrogram.py** 
    traitement des fichiers audio permettant la creation des spectrogrammes

@@ -12,7 +12,29 @@ Classification de la parole et de la musique par réseau de neurones
 **Ajouter une bibliothèque dans Anaconda :** dans le prompt conda, saisissez : `conda install name_package`
 
 ## Utiliser le CNN (approche par spectrogramme)
+**Dans le dossier CNN, vous trouverez trois dossiers contenant des spectrogrammes :**
 
+ - **training_set et test_set** :
+   spectrogrammes des fichiers audios de la base de données permettant l'apprentissage du réseau
+   
+ - **prediction**
+   spectrogrammes du base de tests pour évaluer les performances de l'algorithme
+
+**Vous disposez egalement de trois Python** :
+ 
+ - **AudioFiles_to_Spectrogram.py** 
+   traitement des fichiers audio permettant la creation des spectrogrammes
+   
+ - **Spectrogram_Neurones.py**
+   ce fichier python contient toute la structure du reséau de neurones CNN avec les différents paramètres définis ainsi que la partie permettant les tests de performance
+   
+ - **Application.py**
+   une application graphique permettant de tester l'aglorithme de deep learning en y mettant un entrée un fichier audio coupé
+   
+ **Et enfin un dossier avec l'enregistrement d'un apprentissage pour pouvoir réaliser les tests :**
+ 
+ - **Training**
+ 
 ## Utiliser le ANN (approche par features)
 **Dans le dossier ANN, vous trouverez 2 fichiers MATLAB :**
 

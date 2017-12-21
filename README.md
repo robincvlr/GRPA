@@ -29,7 +29,7 @@ Classification de la parole et de la musique par réseau de neurones
  - **prediction**
    spectrogrammes de la base de test pour évaluer les performances de l'algorithme
 
-**Vous disposez également de trois Python** :
+**Vous disposez également de trois fichiers Python** :
  
  - **AudioFiles_to_Spectrogram.py** 
    traitement des fichiers audio permettant la creation des spectrogrammes

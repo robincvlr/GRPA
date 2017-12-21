@@ -27,7 +27,7 @@ Classification de la parole et de la musique par réseau de neurones
    spectrogrammes des fichiers audios de la base de données permettant l'apprentissage du réseau
    
  - **prediction**
-   spectrogrammes du base de tests pour évaluer les performances de l'algorithme
+   spectrogrammes de la base de test pour évaluer les performances de l'algorithme
 
 **Vous disposez également de trois Python** :
  
@@ -65,3 +65,7 @@ Classification de la parole et de la musique par réseau de neurones
 
  - **Features_Neurones.py** :
    Ce fichier contient les phases d'initialisation des données, d'architecture du réseau de neurones, d'apprentissage, de    sauvegarde d'apprentissage et de predictions.
+
+**Et enfin un dossier avec l'enregistrement d'un apprentissage pour pouvoir réaliser les tests :**
+ 
+ - **Training**

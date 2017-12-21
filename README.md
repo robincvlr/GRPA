@@ -34,5 +34,3 @@ Classification de la parole et de la musique par réseau de neurones
 
  - **Features_Neurones.py** :
    Ce fichier contient les phases d'initialisation des données, d'architecture du réseau de neurones, d'apprentissage, de    sauvegarde d'apprentissage et de predictions.
-
-

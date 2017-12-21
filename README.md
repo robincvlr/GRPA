@@ -29,6 +29,6 @@ Classification de la parole et de la musique par réseau de neurones
    
 **Pour éxecuter un code sur Spyder :** sélectionnez le code puis, CTRL + Enter 
 
-**Ajouter une bibliothèque dans Anaconda :** dans le prompt conda, saisissez : `conda install **name_package**`
+**Ajouter une bibliothèque dans Anaconda :** dans le prompt conda, saisissez : `conda install name_package`
 
 

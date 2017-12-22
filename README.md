@@ -7,15 +7,15 @@ Classification de la parole et de la musique par réseau de neurones
    
 **IDE :** Spyder
    
-**Pour éxecuter un code sur Spyder :** sélectionnez le code puis, CTRL + Enter 
+**Pour exécuter un code sur Spyder :** sélectionnez le code puis, CTRL + Enter 
 
 **Ajouter une bibliothèque dans Anaconda :** dans le prompt conda, saisissez : `conda install name_package`
 
 ## Utiliser le découpeur de fichier audio
-**Dans le dossier Decoupage fichier audio, vous trouverez :**
+**Dans le dossier Découpage fichier audio, vous trouverez :**
   
  - **ffmpeg.exe**
-   l'executable de la librairie ffmpeg utilisée dans le script bash, à laisser dans le même dossier que le script bash lors de son exécution
+   l'exécutable de la librairie ffmpeg utilisée dans le script bash, à laisser dans le même dossier que le script bash lors de son exécution
    
  - **cmd_cut.bat**
    le script bash permettant la découpe des fichiers audio
